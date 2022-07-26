@@ -1,0 +1,13 @@
+<img
+  class="title"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/280px-International_Pok%C3%A9mon_logo.svg.png"
+  width="350px"
+  alt=""
+/>
+<div class="pokemon-list">
+  <app-pokemon-card
+    *ngFor="let pokemon of pokemonService.pokemons; index as i"
+    [pokemon]="pokemon.name"
+    [numeros]="i + 1"
+  ></app-pokemon-card>
+</div>
